@@ -1,0 +1,204 @@
+/*
+ *
+ *	Marcin Tatuś
+ *	7IGR_S 2018
+ *	WSTI w Katowicach
+ *  
+ *  NAME: desktop.css
+ *  DESCRIPTION: 
+ *  style for desktop view - main style
+ *  ELEMENTS: menu (two buttons and chosen noises), content (info, noises in folders and permutations)
+ *  
+ */
+
+
+body, div, p ,a, ul, li {
+	border:0;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #3b3b3b;
+	color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+}
+
+
+
+/*
+ *	MENU
+ */
+
+#menu{
+	background-color: black;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 80px;
+}
+
+#menu .icon {
+	color: rgb(143, 143, 143);
+	font-size: 30px;
+	margin: 20px 0 0 20px;
+}
+
+#menu .icon:hover {
+	color: white;
+	cursor: pointer;
+}
+
+#menu .remove:hover {
+	color: rgb(160, 54, 54);
+}
+
+#menu .info {
+	margin: 20px 0 0 22px
+}
+
+#menu #chosenNoises{
+	height: 50%;
+	overflow: auto;
+}
+
+.chosenNoise {
+	background-color: white;
+	border-radius: 10px;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+	width: 50px;
+}
+
+.chosenNoise:hover {
+	background-color: rgb(160, 54, 54);
+	box-shadow: 2px 2px 10px 1px #000;
+	cursor: pointer;
+}
+
+
+
+/*
+ *	CONTENT
+ */
+
+#content{
+	width: 100%;
+}
+
+
+
+/*
+ *	INFO
+ */
+
+#info{
+	display: block;
+	color: white;
+	margin: 20px 20px 50px 120px;
+	max-width: 1000px;
+	padding: 20px;
+}
+
+#info p .icon{
+	color: white;
+	font-size: 15px;
+	margin-right: 4px;
+}
+
+
+
+/*
+ *	NOISES
+ */
+
+#noises{
+	display: none;
+	width: 700px;
+	margin: 20px auto 50px auto;
+}
+
+.folderHeader{
+	background-color: rgb(189, 189, 189);
+	border-radius: 5px;
+	height: 40px;
+	margin: 20px auto 0 auto;
+	padding-top: 10px;
+	text-align: center;
+	width: 80%;
+}
+
+.folderHeader:hover{
+	background-color: rgb(255, 255, 255);
+	box-shadow: 2px 2px 10px 1px #000;
+	cursor: pointer;
+}
+
+.folderHeaderShadow{
+	background-color: rgb(255, 255, 255);
+	box-shadow: 2px 2px 10px 1px #000;
+}
+
+.folderContent{
+	display: none;
+}
+
+.noise{
+	background-color: rgb(110, 110, 110);
+	border-radius: 5px;
+	height: 40px;
+	margin: 5px auto 0 auto;
+	padding-top: 10px;
+	text-align: center;
+	width: 70%;
+}
+
+.noise:hover{
+	background-color: rgb(74, 138, 74);
+	box-shadow: 2px 2px 10px 1px #000;
+	cursor: pointer;
+}
+
+
+
+/*
+ *	PERMUTATIONS
+ */
+
+#permutations{
+	display: none;
+	width: 700px;
+	margin: 20px auto 50px auto;
+}
+
+#permutationsEmpty, #permutationsAmount{
+	color: white;
+	font-size: 30px;
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+}
+
+.perm{
+	background-color: rgb(189, 189, 189);
+	border-radius: 5px;
+	margin: 20px auto 0 auto;
+	overflow: hidden;
+	padding-top: 5px;
+	text-align: center;
+	width: 90%;
+}
+
+.perm:hover{
+	background-color: rgb(74, 138, 74);
+	box-shadow: 2px 2px 10px 1px #000;
+	cursor: pointer;
+}

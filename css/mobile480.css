@@ -1,0 +1,67 @@
+/*
+ *
+ *	Marcin Tatuś
+ *	7IGR_S 2018
+ *	WSTI w Katowicach
+ *  
+ *  NAME: mobile480.css
+ *  DESCRIPTION: style for mobiles with screen size 480px and less.
+ *  
+ */
+
+#menu{
+    width: 50px;
+}
+
+#menu .icon{
+    font-size: 20px;
+	margin: 15px 0 0 15px;
+}
+
+.chosenNoise{
+    border-radius: 3px;
+    font-size: 12px;
+    height: 23px;
+    margin-top: 5px;
+    padding-top: 7px;
+    width: 30px;
+}
+
+#info{
+    margin-left: 50px;
+    margin-top: 0;
+}
+
+#permutations, #noises{
+    width: 85%;
+    max-width: 600px;
+    margin: 10px 0 0 40px;
+}
+
+.folderHeader{
+    border-radius: 3px;
+    font-size: 15px;
+    height: 30px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.noise{
+    border-radius: 3px;
+    font-size: 12px;
+    height: 27px;
+    padding-top: 8px;
+}
+
+#permutationsEmpty{
+	font-size: 20px;
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+}
+
+.perm{
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 5px;
+}

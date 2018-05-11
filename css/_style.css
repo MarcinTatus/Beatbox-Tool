@@ -1,0 +1,42 @@
+/*
+ *
+ *	Marcin Tatuś
+ *	7IGR_S 2018
+ *	WSTI w Katowicach
+ *  
+ *  NAME: _style.css
+ *  DESCRIPTION: 
+ *  import to main stylesheet (desktop.css)
+ *  imports to stylesheets for mobile devices (mobile979.css, mobile480.css)
+ *  all needed components to use bootstrap icons (.info, .random)
+ *  
+ */
+
+@import url("desktop.css");
+
+@import url("mobile979.css") (min-width: 481px) and (max-width: 979px);
+@import url("mobile480.css") (max-width: 480px);
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), 
+       url('../fonts/glyphicons-halflings-regular.woff') format('woff'), 
+       url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+       url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.icon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.random:before{content: "\e110"}
+.info:before{content: "\e086"}
+.remove:before{content: "\e014"}
